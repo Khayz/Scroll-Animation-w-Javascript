@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+  background-color: #141212;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav .logo a {
+  color: #fff;
+  font-size: 4em;
+  cursor: pointer;
+  outline: none;
+}
+
+nav .nav-link {
+  list-style-type: none;
+}
+
+nav .nav-link li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6em;
+  outline: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav .nav-link li a:hover {
+  font-size: 1.8em;
+}
+
+header, footer {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+.animation {
+  height: 100vh;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.animation .paper-plane {
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+
+.animation .arbol {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+footer {
+  background-color: #141212;
+  color: #fff;
+  height: 10vh;
+  font-size: .8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer a {
+  color: #fff;
+  font-size: 3em;
+  cursor: pointer;
+  margin: 0 15px;
+  outline: none;
+}
+
+@media (max-width: 530px) {
+  header h1 {
+    font-size: 3em;
+  }
+  footer h1 {
+    font-size: .9em;
+  }
+  footer div i {
+    font-size: 1.3em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
